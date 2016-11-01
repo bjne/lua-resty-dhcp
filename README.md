@@ -77,7 +77,7 @@ and will need a typedef to be usable. Please create a pull request if you do so.
 Installation
 ============
 
-Copy the contents of the lib directory to a path in ngx_lua's search path or
+Copy the contents of the lib directory to a path in ngx-lua's search path or
 define the path in nginx's configuration:
 
 ```nginx
@@ -90,6 +90,10 @@ stream {
 And then load the module provided by this library in Lua. For example,
 
 ```lua
+local dhcpd = require "resty.dhcp.server"
+
+or use packet directly:
+
 local dhcp_packet = require "resty.dhcp.packet"
 ```
 
@@ -100,7 +104,7 @@ Bugs and Patches
 
 Please report bugs or submit patches by
 
-Creating a ticket on the [GitHub Issue Tracker](https://github.com/bjne/lua-resty-stream-dhcp/issues),
+Creating a ticket on the [GitHub Issue Tracker](https://github.com/bjne/lua-resty-dhcp/issues),
 
 [Back to TOC](#table-of-contents)
 
@@ -132,7 +136,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 See Also
 ========
-* module [resty.stream.tftp]: https://github.com/bjne/lua-resty-stream-tftp
+* module [resty.tftp]: https://github.com/bjne/lua-resty-tftp
 * the ngx_stream_lua module: https://github.com/openresty/stream-lua-nginx-module
 * OpenResty: https://openresty.org/
 
