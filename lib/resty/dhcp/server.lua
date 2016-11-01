@@ -14,7 +14,7 @@ _M.serve = function(callback)
 
     local data, err = sock:receive()
     if not data then
-        return ngx.log(ngx.WARN, "failed to read packet")
+        return nil, "failed to read packet"
     end
 
     local packet, err = packet.new(data)
