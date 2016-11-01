@@ -1,7 +1,6 @@
 local packet = require "resty.dhcp.packet"
 local match = string.match
 local floor = math.floor
-local _C = string.char
 
 local _M = { _version = 0.1 }
 
