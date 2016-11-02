@@ -2,7 +2,7 @@ local packet = require "resty.dhcp.packet"
 local match = string.match
 local floor = math.floor
 
-local _M = { _version = 0.1 }
+local _M = { _VERSION = 0.1 }
 
 _M.serve = function(callback)
     local sock = ngx.req.udp_socket()
